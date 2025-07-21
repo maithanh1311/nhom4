@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    background-color: #f4f6f9;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-sidebar {
+    width: 250px;
+    background: #e80404;
+    color: white;
+    padding: 20px 15px;
+}
+
+.logo-img img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-item {
+    margin: 15px 0;
+}
+
+.sidebar-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.sidebar-link:hover {
+    background-color: #513737;
+    color: white;
+}
+
+.sidebar-link i {
+    font-size: 18px;
+}
+
+.app-header {
+    background-color: #a80808;
+    color: white;
+    padding: 15px 20px;
+}
+
+.body-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-wrapper-inner {
+    padding: 20px;
+}
+
+.app-topstrip {
+    background-color: #a80808;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-topstrip img {
+    width: 150px;
+}
+
+
+/* trang khac */
+/* === TABLE DANH SÁCH NGƯỜI DÙNG === */
+.table-wrapper {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+.table-wrapper h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.table-wrapper a.them-moi {
+    border-radius: 5px;
+    text-align: center;
+    background-color: green;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 30px;
+}
+
+.table-wrapper a.them-moi:hover {
+    color: white;
+    background-color: #038c0e;
+}
+
+.table-user {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-user th,
+.table-user td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+.table-user th {
+    background-color: #f9fafb;
+    color: #111827;
+    font-weight: 600;
+}
+
+.table-user td {
+    color: #374151;
+}
+
+.table-user .action-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.table-user a.btn-edit {
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(242, 255, 0);
+    color: #000000; 
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+}
+
+.table-user .btn-edit:hover {
+    background-color: rgb(195, 205, 0);
+    color: #ffffff;
+}
+
+.table-user a.btn-delete {
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+}
+
+.table-user .btn-delete:hover {
+    background-color: rgb(148, 13, 13);
+    color: #ffffff;
+}
+/* === FORM NGƯỜI DÙNG === */
+.form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.form-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #374151;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+/* === FORM NGƯỜI DÙNG === */
+.form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.form-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #374151;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+.logout{
+    border-top: solid;
+}
+.search-box {
+  position: relative;
+  width:  300px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 80px 10px 12px;
+  /* chừa khoảng bên phải cho nút */
+  border: 2px solid red;
+  border-radius: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.search-box button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 28px;
+  padding: 0 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
