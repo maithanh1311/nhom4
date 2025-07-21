@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+  padding-left: 10px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-card h2 {
+  margin: 10px 0 5px;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.ws-btn {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #04AA6D;
+  color: #ffffff;
+}
+
+.mb-2 {
+  margin-bottom: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+table {
+  border-collapse: collapse;
+      width: 100%;
+  }
+  th {
+  background: #ccc;
+  }
+  
+  th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+  background: #efefef;
+  }
+  
+  tr:hover {
+  background: #d1d1d1;
+  }
