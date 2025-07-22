@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Logo làm nền */
+body {
+  min-height: 100vh;
+  background: url('./../images/image.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: brightness(0.9); /* Làm dịu hình */
+}
+
+/* Form đăng nhập */
+.wrapper {
+  background: rgba(255, 255, 255, 0.9); /* Trắng trong suốt */
+  padding: 35px 30px;
+  width: 360px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề */
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 25px;
+}
+
+/* Nhập liệu */
+.field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.field input:focus {
+  border-color: #3498db;
+}
+
+.field label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: white;
+  padding: 0 4px;
+  font-size: 13px;
+  color: #888;
+  transition: 0.2s ease;
+  pointer-events: none;
+}
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label {
+  top: -9px;
+  left: 8px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+/* Nút */
+.field input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.field input[type="submit"]:hover {
+  background-color: #2878b5;
+}
+
+/* Link đăng ký */
+.register-link {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

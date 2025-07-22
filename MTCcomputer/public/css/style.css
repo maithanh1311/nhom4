@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f8fb;
+}
+ul, li, a{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-decoration: none;  
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+.content-below {
+    max-width: 1500px;
+    margin: 0 auto;
+  padding: 0 15px;
+}
+.top-marquee {
+  background-color: #d0ebff;
+  padding: 8px 0;
+  color: #004085;
+  font-weight: bold;
+}
+
+.header-od ul{
+  display: flex;
+  background-color: #0069d9;
+  /* justify-content: space-between; hoặc space-around, space-evenly */
+  align-items: center;
+  height: 50px; /* hoặc chiều cao của thẻ */
+  padding: 0 10px; /* thêm nếu muốn khoảng cách 2 bên */
+}
+.header-od li{
+  margin: 10px;
+  color: white  ;
+  
+}
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo img {
+  height: 50px;
+  margin: 0px 0px 0px 15px;
+}
+
+.search {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search form {
+  display: flex;
+  border: 1px solid #90caf9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search input {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+}
+
+.search button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0px 15px;
+  
+}
+
+.cart, .login {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  color: #333;
+  cursor: pointer;
+  
+}
+.nav-li{
+  margin: 5px;
+}
+.nav-li .use{
+  border-left: solid black ;
+}
+
+.content-below {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 5px 0;
+  background: #fefefe;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+  background: #90caf9;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #0f1012;
+  font-weight: bold;
+  display: block;
+}
+
+/* Main banner */
+.main-banner {
+  flex: 1;
+  
+}
+
+.main-banner img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px black;
+}
+
+/* Side banners */
+.side-banners {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.side-banners img {
+  width: 100%;
+  border-radius: 8px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.side-banners img:hover{
+  transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* === MAIN === */
+#main {
+    max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+/* ===== Sản phẩm nổi bật ===== */
+.content-mt{
+  background-color: red;
+  padding:10px 20px;
+  margin-top:10px ;
+}
+.content-mt h2{
+  margin: 10px;
+}
+.content1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content12 {
+    width: 230px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.content12 img:hover {
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content12 img {
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.content12 span {
+    display: block;
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* ===== Nút hành động ===== */
+.btn_muahang,
+.btn_giohang {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px 4px;
+    border: none;
+    border-radius: 8px;
+    width: 220px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn_muahang {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn_muahang:hover {
+    background-color: #218838;
+}
+
+.btn_giohang {
+    background-color: #ffffff;
+    color: #0464ff;
+    border:1px solid #0464ff;
+}
+
+.btn_giohang:hover {
+    background-color: #0069d9;
+    color: #ffffff;
+}
+.product-price{
+  color: #0464ff;
+}
+/* === Bài viết nổi bật === */
+.content_new {
+    clear: both;
+    margin-top: 50px;
+}
+
+.content_new .text_title1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.new_item {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item1 {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+
+.item1:hover {
+    transform: translateY(-5px);
+}
+
+.item1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text_new {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+#footer {
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-box {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+.footer-box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-box ul li:hover {
+    color: #d70018;
+    cursor: pointer;
+}
+
+.social-box .social-icons img,
+.social-box .app-links img {
+    height: 32px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-box .social-icons img:hover,
+.social-box .app-links img:hover {
+    transform: scale(1.1);
+}
